@@ -1,6 +1,7 @@
 import express from 'express';
 import path from 'path';
 import cors from 'cors';
+import compression from 'compression';
 import dotenv from 'dotenv';
 import authRoutes from './routes/authRoutes';
 import serviceRoutes from './routes/serviceRoutes';
@@ -18,6 +19,8 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // ─── Middleware ─────────────────────────────────────────────────
+// GZip compress all responses (cuts payload size by ~70%)
+app.use(compression());
 const allowedOrigins = [
   // Local development
   'http://localhost:5173',

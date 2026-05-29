@@ -23,12 +23,12 @@ const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:5174',
   'http://localhost:3000',
-  // Production — Firebase Hosting (update PROJECT_ID below)
-  'https://origenix-app.web.app',
-  'https://origenix-app.firebaseapp.com',
+  // Production — Firebase Hosting
+  'https://origenixdigitalsolution.web.app',
+  'https://origenixdigitalsolution.firebaseapp.com',
   // Custom domain
-  'https://origenixdigitalsolution.com',
-  'https://www.origenixdigitalsolution.com',
+  'https://origenixdigitalsolutions.org',
+  'https://www.origenixdigitalsolutions.org',
 ];
 
 app.use(cors({

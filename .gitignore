@@ -1,0 +1,20 @@
+# Origenix — Root .gitignore
+
+# Downloaded installers / temp files
+*.exe
+*.zip
+gcloud-sdk*
+gcloud-extracted/
+gcloud-sdk-new/
+
+# Environment
+.env
+.env.*
+
+# Node
+node_modules/
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,77 @@
+/* frontend/src/styles/theme.css */
+:root {
+  /* Primary palette */
+  --color-primary: #0052CC;
+  --color-primary-light: #4C9AFF;
+  --color-primary-dark: #003087;
+  --color-accent: #00C6FF;
+  --color-accent-purple: #7B2FFF;
+  --color-bg-dark: #0A0E1A;
+  --color-bg-section: #F5F7FA;
+  --color-bg-card: #FFFFFF;
+  --color-text-primary: #1A1A2E;
+  --color-text-light: #FFFFFF;
+  --color-text-muted: #6B7280;
+  --color-success: #10B981;
+  --color-error: #EF4444;
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  /* Breakpoints */
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+}
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg-section);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary-light);
+}
+
+/* Utility classes */
+.container {
+  width: 100%;
+  max-width: var(--bp-lg);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.grid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: var(--bp-md)) {
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+}
